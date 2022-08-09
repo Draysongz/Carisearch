@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+  /* background-color: #0093E9; */
+  background-image: linear-gradient(to right, #0093E9 0%, #80D0C7 100%);
+  
+  color: #fff;
+  line-height: 1.6;
+}
+.container{
+    max-width: 768px;
+    margin: auto;
+    padding: 0 20px;
+}
+input{
+    flex-grow: 2;
+    border: 2px solid cyan;
+    font-size: 16px;
+    color: white;
+}
+input:focus{
+    outline: cyan;
+}
+.nav-logo{
+    margin-top: 20%;
+}
+.logo{
+    font-size: 100px;
+    letter-spacing: 5px;
+    color: aqua;
+    margin-left: 30%;
+    
+}
+span{
+    color:#256D85 ;
+}
+.searchbar{
+    width: 40vw;
+    height: 7vh;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+
+}
+.searchbtn{
+    margin-top: 4%;
+    padding: 10px;
+    font-family: 'Nunito', sans-serif;
+    border-radius: 10px;
+    border: 1px solid cyan;
+    margin-left: 20%;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #256D85;
+    color: white;
+    
+}
+.searchbtn:hover{
+    /* background: transparent; */
+    opacity: 0.5;
+    cursor: pointer;
+}
+:placeholder-shown{
+    text-align: center;
+}
