@@ -15,6 +15,7 @@ body{
   color: #fff;
   line-height: 1.6;
 }
+
 .container{
     max-width: 768px;
     margin: auto;
@@ -24,7 +25,8 @@ input{
     flex-grow: 2;
     border: 2px solid cyan;
     font-size: 16px;
-    color: white;
+    color: black;
+    text-align: center;
 }
 input:focus{
     outline: cyan;
@@ -36,8 +38,20 @@ input:focus{
     font-size: 100px;
     letter-spacing: 5px;
     color: aqua;
-    margin-left: 30%;
-    
+    margin-left: 30%;   
+}
+#icon{
+    position: absolute;
+    bottom: 300px;
+    color: black;
+   left: 390px;
+   background: white;
+   height: 7vh;
+   border-radius: 0px;
+   font-size: larger;
+   border-top-left-radius: 20px;
+   border-bottom-left-radius: 20px;
+   border: 2px solid cyan;
 }
 span{
     color:#256D85 ;
@@ -48,6 +62,9 @@ span{
     border-radius: 20px;
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
+    margin-left: 15%;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
 
 }
 .searchbtn{
