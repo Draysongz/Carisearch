@@ -21,6 +21,7 @@ body{
     margin: auto;
     padding: 0 20px;
 }
+
 input{
     flex-grow: 2;
     border: 2px solid cyan;
@@ -42,9 +43,9 @@ input:focus{
 }
 #icon{
     position: absolute;
-    bottom: 300px;
+    bottom: 279px;
     color: black;
-    left: 400px;
+    left: 386px;
    background: white;
    height: 7vh;
    border-radius: 0px;
@@ -67,13 +68,17 @@ span{
     border-bottom-left-radius: 0px;
 
 }
+.tagline{
+    margin-top: -20px;
+    margin-left: 30%;
+}
 .searchbtn{
     margin-top: 4%;
     padding: 10px;
     font-family: 'Nunito', sans-serif;
     border-radius: 10px;
     border: 1px solid cyan;
-    margin-left: 20%;
+    margin-left: 40%;
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
     background-color: #256D85;

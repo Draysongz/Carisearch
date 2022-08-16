@@ -30,6 +30,8 @@ let searchBtn = document.querySelector('#search')
 
 searchBtn.addEventListener('click', (e)=>{
 e.preventDefault()
+
+
 let result = document.getElementById('result')
 
 var query= document.querySelector('#searchbar').value
