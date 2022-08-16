@@ -42,9 +42,9 @@ input:focus{
 }
 #icon{
     position: absolute;
-    bottom: 337px;
+    bottom: 300px;
     color: black;
-   left: 386px;
+    left: 400px;
    background: white;
    height: 7vh;
    border-radius: 0px;
@@ -87,4 +87,14 @@ span{
 }
 :placeholder-shown{
     text-align: center;
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+a:hover{
+    text-decoration: underline;
 }

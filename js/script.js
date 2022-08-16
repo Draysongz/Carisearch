@@ -33,23 +33,36 @@ e.preventDefault()
 let result = document.getElementById('result')
 
 var query= document.querySelector('#searchbar').value
-var API_KEY ='5f8d2545199a43617f85ba63acf7450a' 
-var url= 'http://api.serpstack.com/search?access_key=' + API_KEY +"&type=web&query=" + query
-console.log(url)
+if (query ==''){
+    alert('Please type something')
+}
+var url= `https://api.scaleserp.com/search?api_key=4A634C726E6B457C92DF5270D9B56BE9&q=${query}`
+console.log(url);
+fetch(url).then(res=> res.json())
+.then(json => {
+console.log(json);
+ json.organic_results.forEach(res => {
 
-fetch(url).then((data)=>{
-    console.log(data);
-    let organic = data.json()
-    console.log(organic.PromiseResult);
-//     organic.forEach(res => {
-//         result = `
-//          <h1>${res.title}</h1><br><a href='${res.url}'>${res.url}</a>
-//          <p>${res.snippet}</p>;
-         
-         
-//          `
-//          document.getElementById('result').append(result)
-//     });
-// }) 
+    let h = document.createElement('h3')
+    // let br = document.createElement('br')
+    let a = document.createElement('a')
+    let p = document.createElement('p')
+    let newDiv = document.createElement('div')
+    a.href= res.link;
+    console.log(res)
+    a.innerHTML= res.link;
+    h.innerHTML= res.title;
+    p.innerHTML= res.snippet
+    newDiv.append(h)
 
-})})
+    
+    newDiv.append(a)
+    newDiv.append(p)
+    console.log(newDiv)
+
+         document.getElementById('result').append(newDiv);
+        });
+        
+
+    })
+})
