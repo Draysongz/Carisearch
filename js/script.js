@@ -33,12 +33,12 @@ e.preventDefault()
 
 
 let result = document.getElementById('result')
-
+result.innerHTML = ""
 var query= document.querySelector('#searchbar').value
 if (query ==''){
     alert('Please type something')
 }
-var url= `https://api.scaleserp.com/search?api_key=4A634C726E6B457C92DF5270D9B56BE9&q=${query}`
+var url= `https://api.scaleserp.com/search?api_key=3FA7BBDE1FD84CA485B05CB4C7AAE113&q=${query}`
 console.log(url);
 fetch(url).then(res=> res.json())
 .then(json => {

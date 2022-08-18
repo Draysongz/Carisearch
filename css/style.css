@@ -41,31 +41,20 @@ input:focus{
     color: aqua;
     margin-left: 30%;   
 }
-#icon{
-    position: absolute;
-    bottom: 279px;
-    color: black;
-    left: 386px;
-   background: white;
-   height: 7vh;
-   border-radius: 0px;
-   font-size: larger;
-   border-top-left-radius: 20px;
-   border-bottom-left-radius: 20px;
-   border: 2px solid cyan;
-}
+
 span{
     color:#256D85 ;
 }
 .searchbar{
     width: 40vw;
     height: 7vh;
-    border-radius: 20px;
+    border-radius: 17px 34px;
+    /* border-radius: 20px; */
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     margin-left: 15%;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
+    /* border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px; */
 
 }
 .tagline{
