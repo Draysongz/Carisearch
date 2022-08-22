@@ -60,11 +60,10 @@ console.log(json);
     
     newDiv.append(a)
     newDiv.append(p)
-    console.log(newDiv)
 
          document.getElementById('result').append(newDiv);
         });
-        
 
     })
+    
 })
